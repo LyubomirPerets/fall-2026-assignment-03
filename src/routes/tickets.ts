@@ -93,7 +93,7 @@ router.get('/', async (req, res, next) => {
 // GET /tickets/:id
 router.get('/:id', async (req, res, next) => {
   try {
-    const id = parseId(req.params.id);
+    const id = parseID(req.params.id);
     if (id === null) {
       res.sendStatus(404);
       return;
@@ -181,7 +181,7 @@ router.post('/', async (req, res, next) => {
 // PATCH /tickets/:id/status
 router.patch('/:id/status', async (req, res, next) => {
   try {
-    const id = parseId(req.params.id);
+    const id = parseID(req.params.id);
     if (id === null) {
       res.sendStatus(404);
       return;
