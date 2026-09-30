@@ -7,6 +7,7 @@ const router = Router();
 // GET /users
 // GET /users/:id
 // POST /users
+const MAX_INT = 2147483647;
 
 // man wtf is this assignment
 router.get('/', async (_req, res, next) => {
